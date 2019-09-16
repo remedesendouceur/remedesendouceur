@@ -17,7 +17,6 @@
 body {
     text-align: center;
     background-image: url(../images/image-accueil.jpg);
-    background-size: cover;
     position: relative;
     padding-top: 25px;
     display:flex;
@@ -31,13 +30,18 @@ body {
 
 
 
-.logo{
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*.logo{
     margin: 5px 0;
     margin-bottom: 5px;
-    position: absolute;
     top: 10px;
     left: 30px;
-}
+}*/
 
 .menu-principal{
     /*width:60%;*/
@@ -110,6 +114,10 @@ body {
     border-bottom: none;
 }
 
+.menu-hamburger{
+  display:none;
+}
+
 /* PAGE ACCUEIL */
 
 .paragraphes{
@@ -130,18 +138,15 @@ body {
     margin-bottom: 10px;
     margin-top: 10px;
     border-radius: 127px;
-    background-color: rgba(255, 255, 255, 0.5);
-    font-size: 25px;
+    font-size: 22px;
     justify-content: center;
     align-items: center;
     display: flex;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
+    padding:30px;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: all 0.2s ease-in;
 
-
+  }
 
   .lien{
   text-decoration: none;
@@ -150,14 +155,10 @@ body {
   color: #343434;
 }
 
-  .paragraphes p {
-    background-color: rgba(255, 255, 255, 0.5);
-    transition: all 0.2s ease-in;
-  }
-
   .paragraphes p:hover{
-    background-color: rgba(255, 255, 255, 1);
-    transform: scale(1.2);
+    background-color: rgba(255, 255, 255, 0.8);
+    transform: scale(1.1);
+    font-size:23px;
   }
       
 
@@ -198,6 +199,7 @@ footer a{
   text-decoration:none;
   color:#f5a905;
   margin:15px;
+  display:flex;
 }
 
 .titre-footer{
@@ -219,25 +221,38 @@ footer ul{
 
 form {
     margin: 100px auto;
-    width: 800px;
-    padding: 60px 15px;
+    margin-top: 50px;
+    width:40%;
+    padding: 36px 15px;
     border: 3px solid #f5a905;
     border-radius: 20px;
     background-color:rgba(255, 255, 255, 0.5);
 }
 
-form div + div {
+form div {
   margin-top: 16px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right:30px;
+
 }
 
 label {
-  display: inline-block;
-  width: 90px;
-  text-align: center;
   font-family: "CaviarDreams", Arial, sans-serif;
   font-weight: bold;
   color:black;
+  margin-top:18px;
+  margin-right:18px;
+  padding-left:5px;
+}
 
+.formulaire-contact{
+  font-family: "CaviarDreams", Arial, sans-serif;
+  font-weight: bold;
+  color:white;
+  font-size:30px;
+  margin-top:50px;
+  text-shadow: 4px 0px 3px #000;
 }
 
 input, textarea {
@@ -246,7 +261,7 @@ input, textarea {
   box-sizing: border-box;
   border: 2px solid white;
   border-radius: 10px;
-  height:50px;
+  height:50px; 
 }
 
 input:focus, textarea:focus {
@@ -263,15 +278,148 @@ textarea {
 }
 
 button {
+  cursor: pointer;
   margin-left: 90px;
+  font-family: "CaviarDreams", Arial, sans-serif;
 }
 
 
 
 /* PAGE HUILES ESSENTIELLES*/
 
+.plan-huiles-essentielles{
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding: 20px;
+    font-family: "CaviarDreams", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    padding-left:60px;
+    padding-right:60px;
+
+    }
+
+.premier-texte{
+    display:inline-block;
+    width:60%;
+    vertical-align: middle;
+    padding:20px;
+    margin: 30px;
+    margin-bottom:50px;
+    border: 2px solid #000;
+
+}
+
+
+.plan-huiles-essentielles h1{
+  font-size: 20px;
+  font-weight: bold;
+  padding:20px;
+
+
+  text-decoration: underline;
+}
+
+
 .image-HE{
-margin:50px;
+  background-color: rgba(255, 255, 255, 0.6);
+  display:inline-block;
+  width:20%;
+  vertical-align: middle;
+}
+
+.precaution-emploi{
+    display:inline-block;
+    width:60%;
+    vertical-align: middle;
+    padding:20px;
+    margin: 30px;
+    margin-bottom:50px;
+    border: 2px solid #000;
+}
+
+.img-precaution-emploi{
+  display:inline-block;
+  width:33%;
+  vertical-align: middle;
+  
+}
+
+.les-huiles-indispensables{
+  display:inline-block;
+    width:60%;
+    vertical-align: middle;
+    padding:20px;
+    margin: 30px;
+    margin-bottom:50px;
+    border: 2px solid #000;
+    text-align:left;
+}
+
+.img-les-huiles-indispensables{
+  background-color: rgba(255, 255, 255, 0.6);
+  display:inline-block;
+  width:33%;
+  vertical-align: middle;
+  
+}
+
+
+.les-huiles-indispensables h2 {
+  font-size: 16px;
+  text-decoration: underline;
+  margin-top:10px;
+  padding-bottom:0px;
+
+}
+
+.mes-remedes h2{
+  font-size: 16px;
+  text-decoration: underline;
+  margin-top:10px;
+  padding-bottom:0px;
+}
+
+.p1-mes-remedes{
+  display:inline-block;
+  width:33%;
+  vertical-align: middle;
+  padding:20px;
+  margin: 0px;
+  margin-bottom:50px;
+  border: 2px solid #000;
+
+}
+
+.p2-mes-remedes{
+   display:inline-block;
+  width:33%;
+  vertical-align: middle;
+  padding:20px;
+  margin: 20px;
+  margin-bottom:50px;
+  border: 2px solid #000;
+}
+
+.p3-mes-remedes{
+   display:inline-block;
+  width:33%;
+  vertical-align: middle;
+  padding:20px;
+  margin: 0px;
+  margin-bottom:50px;
+  border: 2px solid #000;
+}
+
+.p4-mes-remedes{
+   display:inline-block;
+  width:33%;
+  vertical-align: middle;
+  padding:20px;
+  margin: 20px;
+  margin-bottom:50px;
+  border: 2px solid #000;
 }
 
 
@@ -279,14 +427,16 @@ margin:50px;
 
 .image-meditation{
   padding-bottom: 20px;
+  border-radius: 60px;
 }
 
 .img-meditation-et-texte{
   text-align:center;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.6);
+
   display:block;
-  margin-top:70px;
-  margin-bottom:70px;
+  margin-top:80px;
+  margin-bottom:80px;
   padding:20px;
   font-family: "CaviarDreams", Arial, sans-serif;
   font-size:30px;
@@ -294,11 +444,23 @@ margin:50px;
 .conseils-meditation{
     text-decoration:none;
     font-family: "CaviarDreams", Arial, sans-serif;
-    font-size: 15px;
-    margin-left: 200px;
-    margin-right: 200px;
+    font-size: 16px;
+    line-height: 25px;
+    margin-left: 260px;
+    margin-right: 260px;
     margin-top: 20px;
     color: black;
+}
+
+.lien-petit-bambou{
+  text-decoration:none;
+  font-family: "CaviarDreams", Arial, sans-serif;
+  font-size: 15px;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 20px;
+  color: black;
+  text-decoration:underline;
 }
  
 
@@ -353,19 +515,130 @@ margin:50px;
 }
 
 /* Mobiles */
-@media screen and (max-width: 650px) {
-  /*body::before { Affiche dans quel @media query on rentre en haut à gauche de la fenêtre
-    content: "< 600px";
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: green;
-    color: #FFF;
-    z-index: 99999999;
-  }*/
+@media screen and (max-width: 640px) {
 
   .paragraphes p {
     width: 96%;
   }
+  .petite-histoire {
+    display: inline-block;
+    color: #343434;
+    font-family: "CaviarDreams", Arial, sans-serif;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    line-height: 24px;
+  }
+
+  .menu-principal{
+    display:none;
+    font-family: "CaviarDreams", Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 15px 17px;
+    font-size: 15px;
+    margin-bottom: 3px;
+
+  }
+
+  .menu-principal-open{
+    display:flex;
+
+  }
+  .menu-hamburger{
+    display:flex;
+    font-family: "CaviarDreams", Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: #e8c884;
+    text-transform: uppercase;
+    padding:0px 17px;
+    font-size: 15px;
+    margin: 0 auto;
+    margin-top: 50px;
+    transition: all 0.1s ease-in;
+  }
+  .menu-hamburger:hover{
+    transform: scale(1.1);
+    background-color: #e8c884;
+    color: #fff;
+  }
+
+  .logo{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top:15px;
+
+  }
+
+  header{
+  justify-content:center;
+  }
+
+.logo img{
+  width:100%;
+  }
+
+/* PAGE CONTACT */
+
+form {
+    margin-top: 15 px;
+    width:85%;
+    padding: 36px 2px;
+    border: 2px solid #f5a905;
 }
+
+
+input, textarea {
+  font: 10px sans-serif;
+  width: 300px;
+  box-sizing: border-box;
+  border: 2px solid white;
+  border-radius: 10px;
+  height:50px; 
+}
+
+input:focus, textarea:focus {
+  border-color: #000;
+}
+footer ul{
+  display:inline-block;
+
+}
+footer{
+padding:10px 0px;
+margin-top: 10px;
+font-size:12px;
+}
+
+.image-meditation {
+    padding-bottom: 20px;
+    width: 233px;
+    height: 138px;
+}
+
+.conseils-meditation {
+    margin-left:0px;
+    margin-right:0px;
+    line-height: 30px;
+}
+.lien-petit-bambou{
+    margin-left:0px;
+    margin-right:0px;
+
+  }
+
+
+}
+
+
+
+
+
+
+
+
