@@ -471,7 +471,7 @@ button {
     margin: 100px;
     padding:50px;
     font-family: "CaviarDreams", Arial, sans-serif;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.8);
     display:block;
 }
 
@@ -524,7 +524,7 @@ button {
     display: inline-block;
     color: #343434;
     font-family: "CaviarDreams", Arial, sans-serif;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 50px;
     margin-left: 50px;
     margin-right: 50px;
