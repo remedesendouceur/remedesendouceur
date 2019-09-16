@@ -9,41 +9,46 @@
     <title>Contact</title>
 </head>
 <body>
-    <a href="index.html">
-    <img class="logo" src="images/guide-therapeutique.png" alt="Logo guide thérapeutique">
-    </a>
     <header>
-        <nav class="bouton">
+        <a href="index.html" class="logo">
+    <img src="images/logo-remedes-en-douceur.png" alt="Logo fleur mandala remèdes en douceur">
+        </a>
+        <nav>
+            <button class="menu-hamburger"> Menu principal </button>
             <ul class="menu-principal">
                 <li>
-                    <a class="page-courante" href="./index.html"> Accueil </a>
+                    <a class="page-courante" href="index.html"> Accueil </a>
                 </li>
                 <li>
                     <a href="./huiles-essentielles.html">Huiles essentielles </a>
                     <ul class="sous-menu-HE only-desktop">
-                        <li><a href="">Les He indispensables</a></li>
-                        <li><a href="">Mes remèdes</a></li>
+                        <li><a href="./huiles-essentielles.html#huiles-indispensables">Les He indispensables</a></li>
+                        <li><a href="./huiles-essentielles.html#mes-remedes">Mes remèdes</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="./energie-universelle.html">L'énergie universelle</a>
                     <ul class="sous-menu-EU only-desktop">
-                        <li><a href="">Les Chakras</a></li>
-                        <li><a href="">Les soins énergétiques</a></li>
+                        <li><a href="#1">Les Chakras</a></li>
+                        <li><a href="#2">Les soins énergétiques</a></li>
                     </ul>
                 </li>
                 <li><a href="./meditation.html">La méditation</a></li>
                 <li><a href="./contact.html">Contacts</a></li>
             </ul>              
         </nav>
-    </header>
+        </header>
+
+
+    
+        <h1 class="formulaire-contact"> Formulaire de contact </h1>
         <form action="/my-handling-form-page" method="post">
         <div>
             <label for="name">Nom :</label>
             <input type="text" id="name" name="user_name">
         </div>
         <div>
-            <label for="mail">e-mail :</label>
+            <label for="mail">E-mail :</label>
             <input type="email" id="mail" name="user_mail">
         </div>
         <div>
@@ -68,5 +73,6 @@
             </ul>              
         </nav> 
 </footer> 
+<script src="./Jqery.js"> </script>
         </body>
         </html>
