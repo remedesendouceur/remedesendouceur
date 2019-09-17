@@ -472,7 +472,12 @@ height: auto;
   }
 
 }
-
+form {
+    margin-top: 15 px;
+    width:85%;
+    padding: 36px 2px;
+    border: 2px solid #153607;
+}
 
 /* Mobiles */
 @media screen and (max-width: 640px) {
@@ -541,12 +546,6 @@ height: auto;
 
 /* PAGE CONTACT */
 
-form {
-    margin-top: 15 px;
-    width:85%;
-    padding: 36px 2px;
-    border: 2px solid #153607;
-}
 
 
 input, textarea {
