@@ -42,13 +42,6 @@ header{
     align-items: center;
 }
 
-/*.logo{
-    margin: 5px 0;
-    margin-bottom: 5px;
-    top: 10px;
-    left: 30px;
-}*/
-
 .menu-principal{
     /*width:60%;*/
     margin: 0 auto;
@@ -364,24 +357,14 @@ button {
 }
 
 
-/*.mes-remedes{
-  display:inline-block;
-  width:33%;
-  vertical-align: middle;
-  padding:20px;
-  margin: 0px;
-  margin-bottom:50px;
-  border: 2px solid #000;
-
-}*/
-
-
 
 /* PAGE MEDITATION */
 
 .image-meditation{
   padding-bottom: 20px;
   border-radius: 60px;
+  width: 50%;
+height: auto;
 }
 
 .img-meditation-et-texte{
@@ -457,12 +440,26 @@ button {
     width: 46%;
   }
 
-.image-meditation {
-    padding-bottom: 20px;
-    width: 233px;
-    height: 138px;
+.image-HE, .img-precaution-emploi, .img-les-huiles-indispensables{
+  display:none;
 }
 
+.plan-huiles-essentielles{
+    padding:0px;
+    }
+.plan-huiles-essentielles p{
+  margin:0px;
+  font-size: 14px;
+  line-height: 25px;
+  margin-top:15px;
+}
+
+
+.image-meditation {
+    padding-bottom: 20px;
+    border-radius:0px;
+    
+}
 .conseils-meditation {
     margin-left:0px;
     margin-right:0px;
@@ -476,6 +473,7 @@ button {
 
 }
 
+
 /* Mobiles */
 @media screen and (max-width: 640px) {
 
@@ -483,11 +481,6 @@ button {
     width: 96%;
   }
   .petite-histoire {
-    display: inline-block;
-    color: #343434;
-    font-family: "CaviarDreams", Arial, sans-serif;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 50px;
     margin-left: 50px;
     margin-right: 50px;
     line-height: 24px;
@@ -558,11 +551,6 @@ form {
 
 input, textarea {
   font: 10px sans-serif;
-  width: 300px;
-  box-sizing: border-box;
-  border: 2px solid white;
-  border-radius: 10px;
-  height:50px; 
 }
 
 input:focus, textarea:focus {
@@ -578,29 +566,9 @@ margin-top: 10px;
 font-size:12px;
 }
 
-
-/* PAGE MEDITATION */
-
-
-.image-meditation {
-    padding-bottom: 20px;
-    width: 233px;
-    height: 138px;
 }
 
-.conseils-meditation {
-    margin-left:0px;
-    margin-right:0px;
-    line-height: 30px;
-}
-.lien-petit-bambou{
-    margin-left:0px;
-    margin-right:0px;
 
-  }
-
-
-}
 
 
 
