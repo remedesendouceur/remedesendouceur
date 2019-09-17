@@ -399,7 +399,7 @@ button {
     text-decoration:none;
     font-family: "CaviarDreams", Arial, sans-serif;
     font-size: 16px;
-    line-height: 25px;
+    line-height: 30px;
     margin-left: 260px;
     margin-right: 260px;
     margin-top: 20px;
@@ -440,16 +440,6 @@ button {
 
 /* Tablettes */
 @media screen and (max-width: 960px) {
-  /*body::before { Affiche dans quel @media query on rentre en haut à gauche de la fenêtre
-    content: "< 960px";
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: red;
-    color: #FFF;
-    z-index: 99999999;
-  }*/
 
   .only-desktop {
     display: none !important;
@@ -466,6 +456,24 @@ button {
   .paragraphes p {
     width: 46%;
   }
+
+.image-meditation {
+    padding-bottom: 20px;
+    width: 233px;
+    height: 138px;
+}
+
+.conseils-meditation {
+    margin-left:0px;
+    margin-right:0px;
+    line-height: 30px;
+}
+.lien-petit-bambou{
+    margin-left:0px;
+    margin-right:0px;
+
+  }
+
 }
 
 /* Mobiles */
