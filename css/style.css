@@ -485,9 +485,12 @@ button:active, button:focus {
 .lien-petit-bambou{
     margin-left:0px;
     margin-right:0px;
-
-
   }
+
+.img-meditation-et-texte{
+  margin-left:10px;
+  margin-right:10px;
+} 
 
 form {
     margin-top: 15px;
@@ -496,8 +499,12 @@ form {
     border: 2px solid #153607;
 }
 
+.texte-huiles-essentielles{
+  width:90%;
+  margin-left:10px;
+  margin-right:10px;
 }
-
+}
 
 /* Mobiles */
 @media screen and (max-width: 640px) {
