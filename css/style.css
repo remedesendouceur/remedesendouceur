@@ -480,7 +480,9 @@ button:active, button:focus {
 
 
   }
-
+p{
+  width:80%;
+}
 form {
     margin-top: 15px;
     width:85%;
