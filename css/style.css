@@ -389,6 +389,18 @@ button:active, button:focus {
   padding-bottom:30px;
 }
 
+
+/*PAGE ENERGIE UNIVERSELLE */
+
+.energie-universelle{
+    margin: 100px;
+    padding:50px;
+    font-size:20px;
+    font-family: "CaviarDreams", Arial, sans-serif;
+    background-color: rgba(255, 255, 255, 0.8);
+    display:block;
+    text-align:center;
+}
  
 /* PAGE MENTIONS LEGALES */
 
