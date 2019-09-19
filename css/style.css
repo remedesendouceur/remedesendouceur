@@ -401,6 +401,10 @@ button:active, button:focus {
     display:block;
     text-align:center;
 }
+
+.image-chakra{
+  width:50%;
+}
  
 /* PAGE MENTIONS LEGALES */
 
