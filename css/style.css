@@ -545,7 +545,7 @@ form {
   .menu-hamburger:hover{
     transform: scale(1.1);
     background-color: #bbff9C;
-    color: #fff;
+    color: #153607;
   }
 
   .logo{
