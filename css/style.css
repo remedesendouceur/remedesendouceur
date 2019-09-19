@@ -504,7 +504,16 @@ form {
   margin-left:10px;
   margin-right:10px;
 }
+
+.energie-universelle{
+  width:90%;
+  margin-left:10px;
+  margin-right:10px;
+  padding:20px;
 }
+
+}
+
 
 /* Mobiles */
 @media screen and (max-width: 640px) {
