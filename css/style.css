@@ -32,7 +32,8 @@ p{
   margin:20px;
   margin-bottom:20px;
   margin-top:20px;
-  line-height: 30px;
+  line-height: 35px;
+  font-size:18px;
   font-family: "CaviarDreams", Arial, sans-serif;
 
   }
@@ -70,7 +71,6 @@ h3{
 
 .bloc{
     display:inline-block;
-    color: #343434;
     border: 2px solid #153607;
     background-color: rgba(255, 255, 255, 0.8);
     padding:20px;
@@ -239,7 +239,7 @@ form {
     padding: 36px 15px;
     border: 3px solid #153607;
     border-radius: 20px;
-    background-color:rgba(255, 255, 255, 0.5);
+    background-color:rgba(255, 255, 255, 0.8);
 }
 
 form div {
@@ -284,9 +284,15 @@ textarea {
 
 button {
   cursor: pointer;
-  margin-left: 90px;
   font-family: "CaviarDreams", Arial, sans-serif;
+  font-size:15px;
 }
+
+button:active, button:focus {
+  outline: none;
+    border: solid 2px white;
+}
+
 
 
 
@@ -354,6 +360,7 @@ button {
   padding-bottom: 20px;
   width: 50%;
   height: auto;
+  padding: 20px;
 }
 
 .img-meditation-et-texte{
@@ -368,16 +375,19 @@ button {
 
 
 .lien-petit-bambou{
-  text-decoration:none;
   font-family: "CaviarDreams", Arial, sans-serif;
-  font-size: 15px;
-  margin-left: 200px;
-  margin-right: 200px;
-  margin-top: 20px;
-  font-color: black;
+  font-size: 18px;
   text-decoration:underline;
+  background-color: #419a1c;
+  color:white;
+  padding:10px;
+  margin-top:50px;
+
 }
- 
+
+.conseils-meditation{
+  padding-bottom:30px;
+}
 
  
 /* PAGE MENTIONS LEGALES */
@@ -404,6 +414,13 @@ button {
 /* Tablettes */
 @media screen and (max-width: 960px) {
 
+  .design-mentions-legales{
+    margin:10px;
+    padding:0px;
+  }
+  .paragraphes-mentions-legales{
+    margin:0px;
+  }
   .only-desktop {
     display: none !important;
   }
@@ -448,6 +465,7 @@ button {
 .lien-petit-bambou{
     margin-left:0px;
     margin-right:0px;
+
 
   }
 
