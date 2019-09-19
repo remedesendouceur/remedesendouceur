@@ -448,7 +448,11 @@ button:active, button:focus {
   .paragraphes p {
     width: 46%;
   }
-
+.bloc{
+  margin-left:10px;
+  margin-right:10px;
+  padding:5px;
+}
 .image-HE, .img-precaution-emploi, .img-les-huiles-indispensables{
   display:none;
 }
@@ -480,9 +484,7 @@ button:active, button:focus {
 
 
   }
-p{
-  width:80%;
-}
+
 form {
     margin-top: 15px;
     width:85%;
@@ -588,7 +590,7 @@ footer ul{
 }
 footer{
 padding:10px 0px;
-margin-top: 10px;
+margin-top: 30px;
 font-size:12px;
 }
 
